@@ -70,6 +70,7 @@ nav {
 .animals {
     font-size: 1.2em;
     padding: 10px;
+    border: 2px solid #ccc;
     border-bottom: 1px solid #ccc;
     animation: fadeIn 0.5s ease-in-out;
 }
