@@ -8,20 +8,123 @@
 </head>
 <body>
 
-<nav>
-    <div class="logo">
-        <a href="#">PET ADVICES</a>
-    <div class="navbar-links">
-        <ul>
+    <nav>
+        <div class="logo">PETS</div>
+        <ul class="nav-links">
             <li><a href="iindex.html">Home</a></li>
-            <li><a href="Advices.html">About</a></li>
+            <li><a href="#">Adopt</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <input id="searchbar"
+               onkeyup="search_animal()"
+               type="text" name="search"
+               placeholder="Search animals..">
+ 
+        <ul id='list'>
+            <li class="animals">Cat</li>
+            <li class="animals">Dog</li>
+            <li class="animals">Elephant</li>
+            <li class="animals">Fish</li>
+            <li class="animals">Gorilla</li>
+            <li class="animals">Monkey</li>
+            <li class="animals">Turtle</li>
+            <li class="animals">Whale</li>
+            <li class="animals">Alligator</li>
+            <li class="animals">Donkey</li>
+            <li class="animals">Horse</li>
         </ul>
     </div>
-</nav>
-<img class="baba" src="images/1.jpg" height="1080px" width="1220px">
+ 
+    <div style="background: url(images/1.jpg); background-repeat: no-repeat; background-position: center; background-attachment: fixed;  background-size: cover;
+    width: 1200px; height: 500px;">
+</div>
+<section class="akira" id="youtube">
+    <div class="line">
+    </div>
+  <style>
+  .slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Adjust width as needed */
+    margin: auto;
+  }
+   
+  .slides {
+    display: flex;
+  }
 
+  .slides img {
+    width: 100%;
+    display: block;
+  }
 
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
 
+  .prev {
+    left: 0;
+  }
 
+  .next {
+    right: 0;
+  }
+</style>
+
+<div class="slider">
+    <h3 class="ylli">MOST POPULAR PETS!</h3>
+  <div class="slides">
+    <img src="images/2.jpg" alt="Movie 1">
+    <img src="images/3.jpg" alt="Movie 2">
+    <img src="images/4.jpg" alt="Movie 3">
+    <img src="images/5.jpg" alt="Movie 4">
+    <img src="images/6.jpg" alt="Movie 5">
+  </div>
+  <button class="prev" onclick="prevSlide()">&#10094;</button>
+  <button class="next" onclick="nextSlide()">&#10095;</button>
+</div>
+<script>
+  let slideIndex = 0;
+
+  function showSlides() {
+    const slides = document.querySelectorAll('.slides img');
+    if (slideIndex >= slides.length) slideIndex = 0;
+    if (slideIndex < 0) slideIndex = slides.length - 1;
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    slides[slideIndex].style.display = 'block';
+  }
+
+  function nextSlide() {
+    slideIndex++;
+    showSlides();
+  }
+
+  function prevSlide() {
+    slideIndex--;
+    showSlides();
+  }
+
+  showSlides();
+            </script>
+        </div>
+    </div>
+</section>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/1.js"></script>
 </body>
 </html>
