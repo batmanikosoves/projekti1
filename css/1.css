@@ -50,6 +50,7 @@ nav {
     align-items: center;
     margin: 20px;
     width: 250px;
+    color: white;
 }
  
 #searchbar {
@@ -70,8 +71,8 @@ nav {
 .animals {
     font-size: 1.2em;
     padding: 10px;
-    border: 2px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border: 2px solid black;
+    border-bottom: 1px solid black;
     animation: fadeIn 0.5s ease-in-out;
 }
  
