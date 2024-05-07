@@ -1,6 +1,68 @@
 
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+}
+
+.footer-left h2, .footer-right h2 {
+    font-size: 24px;
+}
+
+.footer-left p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.social-icons, .quick-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li, .quick-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons a, .quick-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-icons a:hover, .quick-links a:hover {
+    text-decoration: underline;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
 body{
     background-color: #333333;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 .ylli{
