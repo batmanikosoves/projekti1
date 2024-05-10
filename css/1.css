@@ -96,7 +96,13 @@ header a{
     border: 1px solid #eee;
 }
 
-
+body{
+    font-family: Poppins;
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-size: 12px;
+}
 
 
 
