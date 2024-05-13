@@ -26,28 +26,3 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
-
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-const prefixes = ['Fluffy', 'Furry', 'Cuddly', 'Tiny', 'Sunny'];
-const suffixes = ['Paws', 'Whiskers', 'Tail', 'Nose', 'Furball'];
-
-// Function to generate a random pet name
-function generateName() {
-    const randomPrefix = prefixes[Math.floor(Math.random() * prefixes.length)];
-    const randomSuffix = suffixes[Math.floor(Math.random() * suffixes.length)];
-    const generatedName = randomPrefix + ' ' + randomSuffix;
-
-    document.getElementById('generated-name').innerText = generatedName;
-}
