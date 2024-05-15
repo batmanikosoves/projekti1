@@ -40,3 +40,35 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const petList = document.getElementById("petList");
+    const addPetForm = document.getElementById("addPetForm");
+
+    addPetForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        const petName = document.getElementById("petName").value.trim();
+        const petType = document.getElementById("petType").value.trim();
+        
+        if (petName !== "" && petType !== "") {
+            addPetToDOM(petName, petType);
+            addPetForm.reset();
+        } else {
+            alert("Please provide both the pet's name and type.");
+        }
+    });
+
+    function addPetToDOM(name, type) {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>Name:</strong> ${name}, <strong>Type:</strong> ${type}`;
+        petList.appendChild(li);
+    }
+     function showPetProfile(name, type) {
+        // Display pet profile details in the header
+        header.innerHTML = `<h1>${name}</h1><p>Type: ${type}</p>`;
+    }
+});
