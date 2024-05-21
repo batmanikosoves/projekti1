@@ -6,6 +6,7 @@ body{
     color: white;
     margin: 0;
     font-size: 12px;
+
 }
 
 a{
@@ -13,18 +14,85 @@ a{
     color: white;
 }
 
-header{
-    width: 1140px;
-    max-width: 80%;
-    margin: auto;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 100;
+ .navbar{
+            width: 100%;
+            height: 80px;
+            background-color: #080808;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #ffffff;
+        }
+
+       .menu ul{
+        display: flex;
+        align-items: center;
+        letter-spacing: 5px;
+       }
+       .menu ul li a{
+        text-decoration: none;
+        color: #ffffff;
+        padding: 5px 12px;
+        letter-spacing: 15px;
+        font-size: 30px;
+       }
+       .menu ul li a:hover{
+        border-bottom: 4px solid #ffffff;
+        transition: 0.4s;
+        color: #ffffff;
+       }
+       .body{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-size: cover;
+       }
+       .heading{
+        width: 30%;
+        text-align: center;
+        color: #ffffff;
+       }
+       .heading h1{
+        font-size: 40px;
+       }
+       .heading a{
+        text-decoration: none;
+        color: #080808;
+        font-size: 25px;
+         font-size: 25px;
+        font-weight: bold;
+        border-radius: 45px;
+        padding: 14px 50px;
+        background-color: #080808;
+       }
+       .heading a:hover{
+        letter-spacing: 20px;
+        transition: 0.6s;
+       }
+        div{
+            display: block;
+        }
+       
+
+
+.container {
+    text-align: center;
 }
-header a{
-    margin-right: 40px;
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
 }
 
 .carousel{
@@ -96,40 +164,96 @@ header a{
     border: 1px solid #eee;
 }
 
-body{
-    font-family: Poppins;
-    background-color: black;
-    color: white;
-    margin: 0;
-    font-size: 12px;
+
+
+#addProfile form {
+    display: flex;
+    flex-direction: column;
+}
+
+#addProfile input[type="text"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#addProfile button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addProfile button:hover {
+    background-color: #0056b3;
+}
+.intro, .team, .mission {
+    margin-bottom: 40px;
+}
+
+.member {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.member img {
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 auto;
     width: 100%;
-    height: 510px;
-    position: relative;
-  }
-  
-  .slider img {
+}
+
+.slide img {
     width: 100%;
-    height: 500px
+    height: auto;
+}
+
+button {
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
     left: 0;
-  }
-  
-  .slider img:first-child {
-    z-index: 1;
-  }
-  
-  .slider img:nth-child(2) {
-    z-index: 0;
-  }
+}
 
-
-
-
-
+.next {
+    right: 0;
+}
 
 
 
