@@ -96,27 +96,12 @@ function showSlides() {
         slide.style.transform = `translateX(${100 * (index - slideIndex)}%)`;
     });
 }
-<<<<<<< Updated upstream
-
-function nextSlide() {
-    slideIndex++;
-    showSlides();
-}
-
-function prevSlide() {
-    slideIndex--;
-    showSlides();
-}
-
-showSlides();
-=======
->>>>>>> 79af22c983c1df7cbe787ed3a741c9f7dfc27608
 
 
-const menuToggle = document.querySelector('.menu-toggle');
+
+const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
 
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
+burger.addEventListener('click', () => {
+  navLinks.classList.toggle('nav-active');
 });
->>>>>>> Stashed changes
