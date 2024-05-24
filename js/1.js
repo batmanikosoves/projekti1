@@ -99,9 +99,15 @@ function showSlides() {
 
 
 
-const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.nav-links');
-
-burger.addEventListener('click', () => {
-  navLinks.classList.toggle('nav-active');
+document.addEventListener("DOMContentLoaded", function() {
+  const newsletterForm = document.getElementById("newsletter-form");
+  newsletterForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      const emailInput = newsletterForm.querySelector('input[type="email"]');
+      const email = emailInput.value;
+      console.log("Subscribed with email: " + email);
+      // You can add further functionality here like sending the email to a server
+      // or displaying a confirmation message.
+      emailInput.value = ""; // Clear the input field after submission
+  });
 });
