@@ -227,3 +227,25 @@ footer {
 .newsletter button:hover {
     background-color: #f57c00;
 }
+footer { 
+        background-color: #333; 
+        color: #fff; 
+        padding: 10px 0; 
+        text-align: center; 
+    } 
+      
+    footer { 
+        position: fixed; 
+        bottom: 0; 
+        width: 100%; 
+    } 
+  
+    .sticky { 
+        position: sticky; 
+        top: 0; 
+        z-index: 100; 
+    } 
+  
+    p { 
+        text-align: center; 
+    }
