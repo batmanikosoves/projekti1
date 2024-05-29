@@ -1,14 +1,14 @@
-let slideIndex = 0;
-showSlides(slideIndex);
+let slidesIndex = 0;
+showSlides(slidesIndex);
 
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides(slidesIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides(slidesIndex = n);
 }
 
 function showSlides(n) {
@@ -36,9 +36,9 @@ function showSlides() {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
+  slidesIndex++;
+  if (slidesIndex > slides.length) {slidesIndex = 1}
+  slides[slidesIndex-1].style.display = "block";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
@@ -84,33 +84,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-let slidesIndex= 0;
-function showSlides() {
-    const slides = document.querySelectorAll('.slide');
-    if (slideIndex >= slides.length) {
-        slideIndex = 0;
-    } else if (slideIndex < 0) {
-        slideIndex = slides.length - 1;
-    }
-    slides.forEach((slide, index) => {
-        slide.style.transform = `translateX(${100 * (index - slideIndex)}%)`;
-    });
-}
-let slidesIndex = 0;
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  const newsletterForm = document.getElementById("newsletter-form");
-  newsletterForm.addEventListener("submit", function(event) {
-      event.preventDefault();
-      const emailInput = newsletterForm.querySelector('input[type="email"]');
-      const email = emailInput.value;
-      console.log("Subscribed with email: " + email);
-      // You can add further functionality here like sending the email to a server
-      // or displaying a confirmation message.
-      emailInput.value = ""; // Clear the input field after submission
-  });
-});
 
 
 
@@ -138,3 +113,57 @@ const header = document.querySelector('header');
         } 
   
         window.addEventListener('scroll', handleScroll); 
+
+
+
+
+        let availableKeywords = [
+           'HTML',
+           'CSS',
+           'Easy Tutorials',
+           'Web design tutorials',
+           'Javascript',
+           'Where to learn coding online',
+           'Where to learn web design',
+           'How to create a website',
+
+
+            ];
+        const resultsBox = document.querySelector(".result-box");
+        const inputBox = document.getElementById("input-box");
+
+
+        inputBox.onkeyup = function(){
+            let result = [];
+            let input = inputBox.value;
+            if(input.length){
+                result = availableKeywords.filter((keyword)=>{
+                return  keyword.toLowerCase().includes(input.toLowerCase());
+                   });
+                console.log(result);
+            }
+            display(result);
+
+            if(!result.length){
+                resultsBox.innerHTML = '';
+            }
+        }
+
+        function display(result){
+            const content = result.map((list)=>{
+                return "<li onclick=selectInput(this)>" + list + "</li>";
+            });
+            resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
+        }
+
+
+        function selectInput(list){
+            inputBox.value = list.innerHTML;
+            resultsBox.innerHTML = '';
+        }
+        const car = document.querySelector(".car");
+
+        const dragging = (e) => {
+            car.scrollLeft = e.pageX;
+        }
+        car.addEventListener("mousemove", dragging);
