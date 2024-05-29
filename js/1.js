@@ -84,6 +84,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+<<<<<<< Updated upstream
+=======
+let slidesIndex= 0;
+function showSlides() {
+    const slides = document.querySelectorAll('.slide');
+    if (slideIndex >= slides.length) {
+        slideIndex = 0;
+    } else if (slideIndex < 0) {
+        slideIndex = slides.length - 1;
+    }
+    slides.forEach((slide, index) => {
+        slide.style.transform = `translateX(${100 * (index - slideIndex)}%)`;
+    });
+}
+
+>>>>>>> Stashed changes
 
 
 
@@ -103,8 +119,11 @@ function search_animal() {
     }
   }
 }
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 
 
 
@@ -130,6 +149,7 @@ const header = document.querySelector('header');
   
         window.addEventListener('scroll', handleScroll); 
 
+<<<<<<< Updated upstream
 
 
 
@@ -184,3 +204,5 @@ const header = document.querySelector('header');
             car.scrollLeft = e.pageX;
         }
         car.addEventListener("mousemove", dragging);
+=======
+>>>>>>> Stashed changes

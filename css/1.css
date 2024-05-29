@@ -178,7 +178,7 @@ footer {
     padding: 50px 0;
 }
 
-.container {
+.milot {
     width: 80%;
     margin: 0 auto;
 }
@@ -227,17 +227,16 @@ footer {
 .newsletter button:hover {
     background-color: #f57c00;
 }
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
 
 
 
 
 
-.milot {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+<<<<<<< Updated upstream
 #searchbar {
   margin: 10px;
   padding: 10px;
@@ -394,3 +393,5 @@ footer {
      }
    }
 
+=======
+>>>>>>> Stashed changes
