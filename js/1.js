@@ -1,4 +1,4 @@
-let slideIndex = 1;
+let slideIndex = 0;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -83,8 +83,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-let slideIndex = 0;
 
+let slidesIndex= 0;
 function showSlides() {
     const slides = document.querySelectorAll('.slide');
     if (slideIndex >= slides.length) {
@@ -96,7 +96,7 @@ function showSlides() {
         slide.style.transform = `translateX(${100 * (index - slideIndex)}%)`;
     });
 }
-
+let slidesIndex = 0;
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -113,6 +113,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+<<<<<<< HEAD
 function search_animal() {
   let input = document.getElementById('searchbar').value
   input = input.toLowerCase();
@@ -127,3 +128,30 @@ function search_animal() {
     }
   }
 }
+=======
+
+
+
+
+
+const header = document.querySelector('header'); 
+        const footer = document.querySelector('footer'); 
+        const headerOffset = header.offsetTop; 
+        const footerOffset = footer.offsetTop; 
+  
+        function handleScroll() { 
+            if (window.pageYOffset >= headerOffset) { 
+                header.classList.add('sticky'); 
+            } else { 
+                header.classList.remove('sticky'); 
+            } 
+  
+            if (window.pageYOffset >= footerOffset - window.innerHeight) { 
+                footer.classList.add('sticky'); 
+            } else { 
+                footer.classList.remove('sticky'); 
+            } 
+        } 
+  
+        window.addEventListener('scroll', handleScroll); 
+>>>>>>> 247b9bde3e9ca6221d70b5c0efe3fd5612f8afbd
