@@ -211,7 +211,7 @@ footer {
     padding: 50px 0;
 }
 
-.container {
+.milot {
     width: 80%;
     margin: 0 auto;
 }
@@ -310,12 +310,7 @@ footer{
     margin-right: 10px;
 }
 
-.newsletter button {
-    padding: 8px 15px;
-    background-color: #white;
-    color:white;
-    border: none;
-    cursor: pointer;
+
 }
 
 
