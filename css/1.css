@@ -153,7 +153,40 @@ footer {
   .prev:hover, .next:hover {
     background-color:  rgba(0, 0, 0, 0.8);
   }
+.header {
+    background-color: #333; /* Set background color */
+    color: #fff; /* Set text color */
+    padding: 20px; /* Add padding for spacing */
+}
 
+.logo {
+    margin: 0; /* Remove default margins */
+    font-size: 24px; /* Set font size */
+}
+
+.navigation {
+    float: right; /* Align navigation to the right */
+}
+
+.navigation ul {
+    list-style-type: none; /* Remove default list styles */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+.navigation ul li {
+    display: inline; /* Display list items horizontally */
+    margin-left: 20px; /* Add spacing between list items */
+}
+
+.navigation ul li a {
+    color: #fff; /* Set link text color */
+    text-decoration: none; /* Remove default underline */
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
   
   @media (max-width: 768px) {
     .footer-container {
@@ -178,7 +211,7 @@ footer {
     padding: 50px 0;
 }
 
-.milot {
+.container {
     width: 80%;
     margin: 0 auto;
 }
@@ -228,7 +261,172 @@ footer {
     background-color: #f57c00;
 }
 
+.RODIT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.CRAZY{
+    display: flex;
+    justify-content: space-between;
+}
+
+.CRAZY h2 {
+    margin-bottom: 15px;
+}
+
+.ROCK p {
+    margin: 5px 0;
+}
+
+.LINQET ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.LINQET li {
+    margin-bottom: 10px;
+}
+
+.LINQET a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.newsletter input[type="email"] {
+    padding: 8px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    padding: 8px 15px;
+    background-color: #white;
+    color:white;
+    border: none;
+    cursor: pointer;
+}
 
 
 
+.milot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#searchbar {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 150px;
+  box-sizing: border-box;
+  padding-left: 100px;
+  margin-left: 1000px;
+}
+
+#list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 1000px;
+}
+
+.animals {
+  font-size: 1.2em;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.animals:last-child {
+  border-bottom: none;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+footer { 
+        background-color: #333; 
+        color: #fff; 
+        padding: 10px 0; 
+        text-align: center; 
+    } 
+
+    footer { 
+        position: fixed; 
+        bottom: 0; 
+        width: 100%; 
+    } 
+  
+    .sticky { 
+        position: sticky; 
+        top: 0; 
+        z-index: 100; 
+    } 
+  
+    p { 
+        text-align: center; 
+    }
+
+    .search-box{
+      width: 400px;
+      background-color: #fff;
+      margin: 200px auto 0;
+      border-radius: 5px;
+    }
+    .row{
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    input{
+      flex: 1;
+      height: 50px;
+      background:transparent;
+      border: 0;
+      outline: 0;
+      font-size: 18px;
+      color: #333;
+    }
+    button{
+      background:transparent;
+      border: 0;
+      outline: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+    .navigation {
+        float: none; /* Remove float */
+        text-align: center; /* Center-align navigation */
+    }
+
+    .navigation ul li {
+        display: block; /* Display list items as block elements */
+        margin: 10px 0; /* Add spacing between list items */
+    }
+}
+
+   
+   
 
